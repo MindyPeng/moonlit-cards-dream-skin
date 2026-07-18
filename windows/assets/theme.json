@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "moonlit-cards-original",
+  "name": "Moonlit Cards Dream Skin",
+  "brandSubtitle": "MOONLIT CARDS",
+  "tagline": "讓月光與紙牌點亮今天的工作台。",
+  "projectPrefix": "選擇專案 · ",
+  "projectLabel": "♠  選擇專案",
+  "statusText": "MOONLIT CARDS ONLINE",
+  "quote": "MAKE THE NEXT MOVE",
+  "image": "moonlit-cards-original.png",
+  "appearance": "light",
+  "palette": {
+    "accent": "#24A9D8"
+  },
+  "art": {
+    "focusX": 0.76,
+    "focusY": 0.45,
+    "safeArea": "left",
+    "taskMode": "ambient"
+  }
+}

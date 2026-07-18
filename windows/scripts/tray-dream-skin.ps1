@@ -19,7 +19,7 @@ $script:DreamSkinLastAutoApplyAt = [datetime]::MinValue
 $script:DreamSkinLastAutoApplySignature = $null
 
 $sid = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
-$mutex = [System.Threading.Mutex]::new($false, "Local\CodexDreamSkin.$sid.Tray")
+$mutex = [System.Threading.Mutex]::new($false, "Local\MoonlitCardsDreamSkin.$sid.Tray")
 $acquired = $false
 try {
   try { $acquired = $mutex.WaitOne(0) } catch [System.Threading.AbandonedMutexException] { $acquired = $true }

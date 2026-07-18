@@ -638,19 +638,19 @@ html.codex-dream-skin.dream-art-wide main.main-surface
   --dream-line-soft: color-mix(in oklab, var(--dream-accent) 22%, transparent);
   --dream-accent-soft: color-mix(in oklab, var(--dream-accent) 14%, white);
   --dream-accent-hover: color-mix(in oklab, var(--dream-accent) 22%, white);
-  --dream-hero-shade: color-mix(in oklab, var(--dream-surface) 88%, transparent);
+  --dream-hero-shade: color-mix(in oklab, var(--dream-surface) 72%, transparent);
   --dream-ambient-opacity: .1;
   --dream-shadow: 0 16px 36px rgb(38 91 125 / .16);
-  --dream-immersive-edge: color-mix(in oklab, var(--dream-surface) 88%, transparent);
-  --dream-immersive-mid: color-mix(in oklab, var(--dream-surface) 72%, transparent);
-  --dream-immersive-far: color-mix(in oklab, var(--dream-surface) 44%, transparent);
-  --dream-immersive-sidebar: color-mix(in oklab, var(--dream-sidebar) 88%, transparent);
+  --dream-immersive-edge: color-mix(in oklab, var(--dream-surface) 70%, transparent);
+  --dream-immersive-mid: color-mix(in oklab, var(--dream-surface) 42%, transparent);
+  --dream-immersive-far: color-mix(in oklab, var(--dream-surface) 12%, transparent);
+  --dream-immersive-sidebar: color-mix(in oklab, var(--dream-sidebar) 84%, transparent);
   --dream-task-immersive-sidebar: color-mix(in oklab, var(--dream-sidebar) 93%, transparent);
   --dream-immersive-composer: color-mix(in oklab, var(--dream-surface-raised) 90%, transparent);
   --dream-immersive-line: color-mix(in oklab, var(--dream-accent) 28%, transparent);
-  --dream-task-immersive-edge: color-mix(in oklab, var(--dream-surface) 94%, transparent);
-  --dream-task-immersive-mid: color-mix(in oklab, var(--dream-surface) 88%, transparent);
-  --dream-task-immersive-far: color-mix(in oklab, var(--dream-surface) 78%, transparent);
+  --dream-task-immersive-edge: color-mix(in oklab, var(--dream-surface) 88%, transparent);
+  --dream-task-immersive-mid: color-mix(in oklab, var(--dream-surface) 74%, transparent);
+  --dream-task-immersive-far: color-mix(in oklab, var(--dream-surface) 56%, transparent);
 }
 
 html.codex-dream-skin body,
@@ -685,7 +685,7 @@ html.codex-dream-skin aside.app-shell-left-panel [class~="bg-token-list-hover-ba
 
 html.codex-dream-skin aside.app-shell-left-panel [aria-current="page"] {
   color: white !important;
-  background: linear-gradient(90deg, oklch(0.58 0.13 230), var(--dream-accent)) !important;
+  background: linear-gradient(90deg, #075f85, #08779f) !important;
 }
 
 html.codex-dream-skin aside.app-shell-left-panel [aria-current="page"] :is(

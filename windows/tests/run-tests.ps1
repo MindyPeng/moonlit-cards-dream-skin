@@ -443,7 +443,8 @@ try {
     'background-position: var(--dream-art-position)',
     '.dream-home-utility',
     ':has(.dream-home-utility) .composer-surface-chrome',
-    ':is(.dream-task-ambient, .dream-task-banner):has(main.main-surface:not(.dream-home-shell))'
+    ':is(.dream-task-ambient, .dream-task-banner):has(main.main-surface:not(.dream-home-shell))',
+    'background: linear-gradient(90deg, #075f85, #08779f)'
   )) {
     if (-not $css.Contains($requiredCss)) { throw "Windows immersive CSS is missing: $requiredCss" }
   }
@@ -472,6 +473,11 @@ try {
   }
   if (-not $restoreSource.Contains("'Moonlit Cards Dream Skin Auto Apply.lnk'")) {
     throw 'Uninstall does not remove the automatic startup shortcut.'
+  }
+  $commonSource = Read-DreamSkinUtf8File -Path (Join-Path $Root 'scripts\common-windows.ps1')
+  if (-not $commonSource.Contains('Local\MoonlitCardsDreamSkin.$sid.Operation') -or
+    -not $traySource.Contains('Local\MoonlitCardsDreamSkin.$sid.Tray')) {
+    throw 'Moonlit Cards still shares process locks with another Dream Skin installation.'
   }
   $theme = (Read-DreamSkinUtf8File -Path (Join-Path $Root 'assets\theme.json')) | ConvertFrom-Json
   if ($theme.schemaVersion -ne 1 -or $theme.id -cne 'moonlit-cards-original' -or

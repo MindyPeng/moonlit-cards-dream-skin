@@ -2,7 +2,7 @@
 
 function Enter-DreamSkinOperationLock {
   $sid = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
-  $mutex = [System.Threading.Mutex]::new($false, "Local\CodexDreamSkin.$sid.Operation")
+  $mutex = [System.Threading.Mutex]::new($false, "Local\MoonlitCardsDreamSkin.$sid.Operation")
   $acquired = $false
   try {
     $acquired = $mutex.WaitOne(0)
